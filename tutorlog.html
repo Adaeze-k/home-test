@@ -7,52 +7,183 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/tutorlog.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
-        <div class="full-page">
-            <div class="wrapper">
-                <div class="form-box form-container">
-                    <div class="titles">
-                        <div class="title selected--section" id="in">
-                            <p> Returning User</p>
-                        </div>
-        
-                        <div class="title" id="up">
-                            <p>New User</p>
-                            <a href="form.html"></a>
-                        </div>
+        <div class="container">
+            <input type="checkbox" id="flip">
+                <div class="cover">
+                <div class="front">
+                    <img src="images/teach4.jpg" alt="">
+                    <div class="text">
+                    <span class="text-1"> Great to have you back <br> a child awaits</span>
+                    <span class="text-2"> get connected</span>
                     </div>
-                        <h2>
-                            Already a tutor?
-                        </h2>
-                        <div class="form-inner">
-                            <form action="#" class="login">
-                               <div class="field">
-                                  <input type="text" placeholder="Email Address" required>
-                               </div>
-                               <div class="field">
-                                  <input type="password" placeholder="Password" required>
-                               </div>
-                               <div class="pass-link">
-                                  <a href="#">Forgot password?</a>
-                               </div>
-                               <div class="field btn">
-                                  <div class="btn-layer"></div>
-                                  <input type="submit" value="Login">
-                               </div>
-                               <div class="signup-link">
-                                  Don't have an account? <a href="form.html">Signup now</a>
-                               </div>
-                            </form>
-                           
-                         </div>
                 </div>
-            </div>
-        </div>
-        
+                <div class="back">
+                    <img class="backImg" src="images/teach5.jpg" alt="girl child">
+                    <div class="text">
+                    <span class="text-1">Complete miles of journey <br> with one step</span>
+                    <span class="text-2">Let's get started</span>
+                    </div>
+                </div>
+                </div>
 
-        
+                <form action="#">
+                    <div class="form-content">
+                        <div class="login-form">
+                            <div class="title">Login</div>
+                            <div class="input-boxes">
+                              <div class="input-box">
+                                <i class="fas fa-envelope"></i>
+                                <input type="text" placeholder="Enter your email" required>
+                              </div>
+                              <div class="input-box">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Enter your password" required>
+                              </div>
+                              <div class="content">
+                                  <div class="checkbox">
+                                    <input type="checkbox" id="remember-me">
+                                    <label for="remember-me">Remember me</label>
+                                  </div>
+                                  <div class="pass-link text"><a href="#">Forgot password?</a></div>
+                              </div>
+                              <div class="button input-box">
+                                <input type="submit" value="login">
+                              </div>
+                              <div class="text sign-up-text">Don't have an account? <label for="flip">Sigup now</label></div>
+                            </div>
+                          </div>
+
+                            <div class="signup-form">
+                                <div class="title">Signup</div>
+                                <div class="container-fluid">
+                                    <div class="row justify-content-center">
+                                        <div class="text-center">
+                                            <div class="card">
+                                                <div id="msform">
+                                                    <!-- progressbar -->
+                                            <ul id="progressbar">
+                                                <li class="active" id="account"><strong>Account</strong></li>
+                                                <li id="personal"><strong>Personal</strong></li>
+                                                <li id="payment"><strong>Image</strong></li>
+                                                <li id="confirm"><strong>Finish</strong></li>
+                                            </ul>
+                                            <div class="progress">
+                                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div> <br>
+                                                <fieldset>
+                                                    <div class="form-card">
+                                                        <div class="row">
+                                                            <div class="col-7">
+                                                                <h4 class="fs-title">Account </h4>
+                                                            </div>
+                                                            <div class="col-5">
+                                                                <h5 class="steps">Step 1 - 4</h5>
+                                                            </div>
+                                                        </div> 
+                                                        <div class="input-boxes">
+                                                        <div class="input-box">
+                                                            <i class="fas fa-user"></i>
+                                                            <input type="text" placeholder="Enter your fullname" required>
+                                                        </div>
+                                                        <div class="input-box">
+                                                            <i class="fas fa-envelope"></i>
+                                                            <input type="text" placeholder="Enter your email" required>
+                                                        </div>
+                                                        <div class="input-box">
+                                                            <i class="fas fa-lock"></i>
+                                                            <input type="password" placeholder="Enter your password" required>
+                                                        </div>
+                                                        <div class="input-box">
+                                                            <i class="fas fa-lock"></i>
+                                                            <input type="password" placeholder="Confirm password" required>
+                                                        </div>
+                                                    </div> 
+                                                 </div>
+                                                    <input type="button" name="next" class="next action-button" value="Next" />
+                                                </fieldset>
+                                                <fieldset>
+                                                    <div class="form-card">
+                                                        <div class="row">
+                                                            <div class="col-7">
+                                                                <h4 class="fs-title">Personal Information </h4>
+                                                            </div>
+                                                            <div class="col-5">
+                                                                <h5 class="steps">Step 2 - 4</h5>
+                                                            </div>
+                                                        </div> 
+                                                        <div class="input-boxes">
+                                                        <div class="input-box">
+                                                            <i class="fas fa-user"></i>
+                                                            <input type="text" placeholder="Enter your fullname" required>
+                                                        </div>
+                                                        <div class="input-box">
+                                                            <i class="fas fa-envelope"></i>
+                                                            <input type="text" placeholder="Enter your email" required>
+                                                        </div>
+                                                        <div class="input-box">
+                                                            <i class="fas fa-lock"></i>
+                                                            <input type="password" placeholder="Enter your password" required>
+                                                        </div>
+                                                        <div class="input-box">
+                                                            <i class="fas fa-lock"></i>
+                                                            <input type="password" placeholder="Confirm password" required>
+                                                        </div>
+                                                    </div> 
+                                                 </div> 
+                                                    <input type="button" name="next" class="next action-button" value="Next" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                                </fieldset>
+                                                <fieldset>
+                                                    <div class="form-card">
+                                                        <div class="row">
+                                                            <div class="col-7">
+                                                                <h4 class="fs-title">Image Upload:</h4>
+                                                            </div>
+                                                            <div class="col-5">
+                                                                <h5 class="steps">Step 3 - 4</h5>
+                                                            </div>
+                                                        </div> 
+                                                        <label class="fieldlabels">Upload Your Photo:</label> <input type="file" name="pic" accept="image/*"> <label class="fieldlabels">Upload Signature Photo:</label> <input type="file" name="pic" accept="image/*">
+                                                    </div>
+                                                    <input type="button" name="next" class="next action-button" value="Submit" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                                                </fieldset>
+                                                <fieldset>
+                                                    <div class="form-card">
+                                                        <div class="row">
+                                                            <div class="col-7">
+                                                                <h4 class="fs-title">Finish:</h4>
+                                                            </div>
+                                                            <div class="col-5">
+                                                                <h5 class="steps">Step 4 - 4</h5>
+                                                            </div>
+                                                        </div> <br><br>
+                                                        <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
+                                                        </div> <br><br>
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-7 text-center">
+                                                                <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </fieldset>
+                                                <div class="text sign-up-text">Already have an account? <label for="flip">Login now</label></div>
+                                            </div>
+                                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                             </div>  
+                        </div>          
+                </form>
+        </div>
+     
          <script src="tutorlog.js">
         </script> 
     </body>
