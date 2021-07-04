@@ -14,61 +14,47 @@ a{
 
 .bg{
     height: 100%;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url(/images/screen3.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)),  url(/images/screen1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-.bg .container{
-    color: #111;
+.container{
     font-size: 20px;
+    color: #3b3b3b;
     font-family: Poppins;
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
-    padding: 40px;
+    padding: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.container span{
-    color: #FFB425;
-    font-weight: 500;
+.container h1{
+    font-size: 35px;
 }
 
+.container p{
+    margin-bottom: 40px;
+}
 
-.btn{
-	padding: 10px 20px;
-	font-family: Poppins;
+.container .btn{
+    color: #565656;
+    background-color: #4ca772;
+    padding: 10px 20px;
 	font-size: 20px;
 	cursor: pointer;
-	margin: 10px;
 	transition: 0.6s;
-	position: relative;
-	overflow: hidden;
 	border-radius: 6px;
+    position: relative;
 }
 
-.btn1, .btn2{
-	color: #565656;
-}
-.btn1{
-	border: 1px solid #4CA772;
-}
-
-.btn2{
-	border: 1px solid #FFB425;
-}
-.btn1:hover {
-	color: #fff;
-	background-color: #4CA772;
-}
-
-.btn2:hover{
+.container .btn:hover{
 	color: #fff;
 	background-color: #FFB425;
 }

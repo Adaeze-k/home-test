@@ -66,10 +66,10 @@
                                                 <div id="msform">
                                                     <!-- progressbar -->
                                             <ul id="progressbar">
-                                                <li class="active" id="account"><strong>Account</strong></li>
-                                                <li id="personal"><strong>Personal</strong></li>
-                                                <li id="payment"><strong>Image</strong></li>
-                                                <li id="confirm"><strong>Finish</strong></li>
+                                                <li class="active" id="account"></li>
+                                                <li id="personal"></li>
+                                                <li id="payment"></li>
+                                                <li id="confirm"></li>
                                             </ul>
                                             <div class="progress">
                                                 <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
@@ -77,10 +77,10 @@
                                                 <fieldset>
                                                     <div class="form-card">
                                                         <div class="row">
-                                                            <div class="col-7">
+                                                            <div class="col">
                                                                 <h4 class="fs-title">Account </h4>
                                                             </div>
-                                                            <div class="col-5">
+                                                            <div class="col">
                                                                 <h5 class="steps">Step 1 - 4</h5>
                                                             </div>
                                                         </div> 
@@ -108,21 +108,31 @@
                                                 <fieldset>
                                                     <div class="form-card">
                                                         <div class="row">
-                                                            <div class="col-7">
-                                                                <h4 class="fs-title">Personal Information </h4>
+                                                            <div class="col">
+                                                                <h4 class="fs-title">Personal </h4>
                                                             </div>
-                                                            <div class="col-5">
+                                                            <div class="col">
                                                                 <h5 class="steps">Step 2 - 4</h5>
                                                             </div>
                                                         </div> 
                                                         <div class="input-boxes">
                                                         <div class="input-box">
-                                                            <i class="fas fa-user"></i>
-                                                            <input type="text" placeholder="Enter your fullname" required>
+                                                           
+                                                            <div class="select">
+                                                               
+                                                                <select name="slct" id="slct">
+                                                                  <option selected disabled>Gender</option>
+                                                                  <option value="1">Male</option>
+                                                                  <option value="2">Female</option>
+                                                                </select>
+                                                              </div>
                                                         </div>
-                                                        <div class="input-box">
-                                                            <i class="fas fa-envelope"></i>
-                                                            <input type="text" placeholder="Enter your email" required>
+                                                        <div class="inputs">
+                                                            <div class="input">
+                                                
+                                                                <input type="date" name="party" min="1982-01-01" max="2017-12-31" required>
+                                                                <span class="validity"></span>
+                                                            </div>
                                                         </div>
                                                         <div class="input-box">
                                                             <i class="fas fa-lock"></i>
@@ -139,10 +149,10 @@
                                                 <fieldset>
                                                     <div class="form-card">
                                                         <div class="row">
-                                                            <div class="col-7">
-                                                                <h4 class="fs-title">Image Upload:</h4>
+                                                            <div class="col">
+                                                                <h4 class="fs-title">Image Upload</h4>
                                                             </div>
-                                                            <div class="col-5">
+                                                            <div class="col">
                                                                 <h5 class="steps">Step 3 - 4</h5>
                                                             </div>
                                                         </div> 
@@ -153,19 +163,19 @@
                                                 <fieldset>
                                                     <div class="form-card">
                                                         <div class="row">
-                                                            <div class="col-7">
-                                                                <h4 class="fs-title">Finish:</h4>
+                                                            <div class="col">
+                                                                <h4 class="fs-title">Done</h4>
                                                             </div>
-                                                            <div class="col-5">
+                                                            <div class="col">
                                                                 <h5 class="steps">Step 4 - 4</h5>
                                                             </div>
                                                         </div> <br><br>
                                                         <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
                                                         <div class="row justify-content-center">
-                                                            <div class="col-3"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
+                                                            <div class="col"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
                                                         </div> <br><br>
                                                         <div class="row justify-content-center">
-                                                            <div class="col-7 text-center">
+                                                            <div class="col text-center">
                                                                 <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
                                                             </div>
                                                         </div>
