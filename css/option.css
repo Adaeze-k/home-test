@@ -40,7 +40,11 @@ a{
     font-weight: 500;
 }
 
+.container img{
+    margin-bottom: 15px;
+    width: 100px;
 
+}
 .btn{
 	padding: 10px 20px;
 	font-family: Poppins;
