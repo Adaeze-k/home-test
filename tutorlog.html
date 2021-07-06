@@ -128,7 +128,7 @@
                                                               </div>
                                                               <div class="input">
                                                 
-                                                                <input type="date" class="dates" id="date" name="party" min="1982-01-01" max="2017-12-31" required>
+                                                                <input type="date" class="dates" id="date" name="party" min="1982-01-01" max="2021-12-31" required>
                                                                 <span class="validity"></span>
                                                             </div>
                                                         </div>
@@ -184,8 +184,42 @@
                                                             <div class="col">
                                                                 <h5 class="steps"> 4 of 4</h5>
                                                             </div>
-                                                        </div> <br><br>
-                                                        <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                                                        </div> 
+                                                        
+                                                            
+                                                            <label for="bio">Bio:</label>
+                                                            <textarea id="bio" name="user_bio"></textarea>
+                                                            <div class="input-box">
+                                                                <i class="fas fa-university"></i>
+                                                                <input type="text" placeholder="Name of instituition" required>
+                                                            </div>
+                                                            <div class="input-box">
+                                                                <div class="line">
+                                                                    <i class="fas fa-pen"></i>
+                                                                <input type="text" placeholder="Course" required>
+                                                               </div>
+                                                                  <div class="grade">
+                                                                    <i class="fas fa-book-open"></i>
+                                                                <input type="text" placeholder="Grade" required>
+                                                                  </div>
+
+                                                            </div>
+                                                            <div class="input-box">
+                                                                <i class="fas fa-check-circle"></i>
+                                                                <input type="text" placeholder="Other qualification" required>
+                                                            </div>
+                                                          <label class="job"  for="job">Rate/hour</label>
+                                                          <select  id="rates" name="slct"> 
+                                                                    <optgroup label="pay rates">
+                                                                        <option value="1">&#8358;500/hr</option>
+                                                                        <option value="2">&#8358;450/hr</option>
+                                                                        <option value="3">&#8358;550/hr</option>
+                                                                        <option value="4">&#8358;650/hr</option>
+                                                                        <option value="5">&#8358;600/hr</option>
+                                                                        <option value="6">&#8358;300/hr</option>
+                                                                    </optgroup>
+                                                        </select>
+                                                       <!-- <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
                                                         <div class="row justify-content-center">
                                                             <div class="col"> <img src="https://i.imgur.com/GwStPmg.png" class="fit-image"> </div>
                                                         </div> <br><br>
@@ -193,7 +227,7 @@
                                                             <div class="col text-center">
                                                                 <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
                                                     <input type="button" name="next" class="next action-button" value="Submit" /> <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
                                                 </fieldset>

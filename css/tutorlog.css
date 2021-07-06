@@ -362,6 +362,54 @@ select {
 }
  
 
+/*qualifications*/
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px 20px;
+  background: rgba(188, 236, 208, 0.46);
+  outline: none;
+  border: none;
+}
+
+
+div .grade{
+ margin-left: 20px;
+}
+div .line{
+ margin-right: 20px;
+}
+
+/*rate*/
+ .job{
+  text-decoration: none !important;
+}
+
+#rates{
+  width: 8em;
+  height: 2.9em;
+  margin: 20px 0 ;
+  line-height: 3;
+  overflow: hidden;
+}
+
+ #rates::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1em;
+  background: #565656;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+/* Transition */
+ #rates:hover::after {
+  color: #f39c12;
+}
 /* Arrow */
 .select::after {
   content: '\25BC';
@@ -377,7 +425,7 @@ select {
   transition: .25s all ease;
 }
 /* Transition */
-.select:hover::after {
+.rates:hover::after {
   color: #f39c12;
 }
 
