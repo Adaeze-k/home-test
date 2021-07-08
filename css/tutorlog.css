@@ -275,8 +275,9 @@ small {
 }
 
 .avatar-upload label:after {
-  content: "\f040";
-  font-family: 'Font Awesome Free';
+  font-family: 'Font Awesome 5 Free';
+  content: '\f030';
+  font-weight: 600;
   color: #757575;
   position: absolute;
   top: 10px;
@@ -497,10 +498,7 @@ div .line{
   text-align: left;
 }
 
-.purple-text {
-  color: #ffb425;
-  font-weight: normal;
-}
+
 
 .steps {
   font-size: 15px;
@@ -532,23 +530,44 @@ div .line{
 }
 
 #progressbar #account::before {
-    content: "";
+  font-family: 'Font Awesome 5 Free';
+  content: '\f007';
+  font-weight: 600;
+  text-align: center;
+  
+ 
+ 
+ 
  
 }
 
 #progressbar #personal::before {
-   content: "";
+  font-family: 'Font Awesome 5 Free';
+  content: '\f304';
+  font-weight: 600;
+  text-align: center;
+  
  
   
 }
 
 #progressbar #payment::before {
-  content: "";
+  font-family: 'Font Awesome 5 Free';
+  content: '\f302';
+  font-weight: 600;
+  text-align: center;
+ 
+ 
  
 }
 
 #progressbar #confirm::before {
-      content: "";
+  font-family: 'Font Awesome 5 Free';
+  content: '\f044';
+  font-weight: 600;
+  text-align: center;
+ 
+ 
  
 }
 
@@ -589,10 +608,184 @@ div .line{
   background-color: #4ca772;
 }
 
-.fit-image {
-  width: 100%;
-  object-fit: cover;
+
+
+.cards {
+  box-shadow: 0 0 2px 1px rgba(143, 1431, 143, 0.21) !important;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 100px;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  margin-right: auto;
 }
+
+.card-header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.card-header p {
+  margin-top: 13px;
+  font-size: 13px;
+  color: #565656;
+}
+
+.card-header h2{
+  margin-top: 13px;
+  color: #ffb425;
+}
+
+.card-header i{
+  font-size: 40px;
+  color: #4ca772;
+}
+.card-body {
+  padding: 50px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+
+.w-100 {
+  width: 100% !important; /*100 button*/
+}
+
+.cols {
+  max-width: 200px; /*350*/
+}
+
+.card-footer {
+  border-top: 1px solid #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+.btn {
+  padding: 8px 22px;
+  text-align: center;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+}
+
+.btn-info {
+  background: #4ca772;
+}
+.btn-info:hover {
+  background: #f39c12;
+}
+
+
+.cards a{
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 20px;
+  padding: 10px !important;
+  color: red;
+}
+
+.cards span{
+  color: #4ca772;
+}
+
+.cards span:hover{
+  text-decoration: underline;
+}
+
+.activation-code-input {
+  display: none;
+}
+
+.activation-code {
+  direction: ltr;
+  position: relative;
+}
+
+.activation-code::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 2px solid;
+  margin-right: 8px;
+  border-color: #ccc;
+  transition: opacity 0.3s ease;
+}
+
+.activation-code > span {
+  position: absolute;
+  display: block;
+  font-size: 15px;
+  color: #ccc;
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease;
+}
+
+.activation-code .activation-code-inputs {
+  display: flex;
+  /*flex-direction: row;*/
+  /*flex-wrap: nowrap;*/
+  flex-flow: row nowrap;
+}
+
+.activation-code .activation-code-inputs input {
+  display: flex;
+  flex-flow: column nowrap;
+  padding-right: 5px;
+  outline: 10px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  border: 2px solid;
+  border-color: #ccc;
+  margin-right: 8px;
+  /*background: red;*/
+  opacity: 0;
+}
+
+.activation-code .activation-code-inputs input:last-child {
+  margin-right: 0;
+}
+
+.activation-code.active::before {
+  opacity: 0;
+}
+
+.activation-code.active .activation-code-inputs input {
+  opacity: 1 !important;
+}
+
+.activation-code .activation-code-inputs input:focus {
+  border-color: #f39c12 !important;
+}
+
+
+.activation-code.active > span {
+  transform: translate(0, -100%);
+  line-height: 30px;
+  opacity: 0.6;
+}
+ 
 
 
   @media (max-width: 730px) {
