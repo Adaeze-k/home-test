@@ -530,11 +530,9 @@ div .line{
 }
 
 #progressbar #account::before {
-  font-family: 'Font Awesome 5 Free';
-  content: '\f007';
-  font-weight: 600;
-  text-align: center;
   
+  content: '';
+ 
  
  
  
@@ -542,30 +540,26 @@ div .line{
 }
 
 #progressbar #personal::before {
-  font-family: 'Font Awesome 5 Free';
-  content: '\f304';
-  font-weight: 600;
-  text-align: center;
+ 
+  content: '';
   
  
   
 }
 
 #progressbar #payment::before {
-  font-family: 'Font Awesome 5 Free';
-  content: '\f302';
-  font-weight: 600;
-  text-align: center;
+  
+  content: '';
+ 
  
  
  
 }
 
 #progressbar #confirm::before {
-  font-family: 'Font Awesome 5 Free';
-  content: '\f044';
-  font-weight: 600;
-  text-align: center;
+  
+  content: '';
+ 
  
  
  
@@ -786,7 +780,30 @@ div .line{
   opacity: 0.6;
 }
  
+/*cv*/
+.sr-only {
+  position: absolute;
+  margin: -1px;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
 
+.btns {
+  display: inline-block;
+  padding: .5rem 1rem;
+  color: #f39c12 !important;
+  cursor: pointer;
+  border-radius: 0;
+  margin-left: 64px;
+  text-decoration: none !important;
+}
+
+[type=file]:focus + .btns {
+  outline: 1px solid #f39c12;
+}
 
   @media (max-width: 730px) {
     .container .cover{
