@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffb425;
+    background: whitesmoke;
     padding: 30px;
   }
   .container{
@@ -111,7 +111,7 @@
     position: relative;
     font-size: 24px;
     font-weight: 500;
-    color: #333;
+    color: #4ca772;
   }
   form .form-content .title:before{
     content: '';

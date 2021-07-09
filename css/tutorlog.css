@@ -10,7 +10,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffb425;
+    background: whitesmoke;
     padding: 30px;
   }
   .container{
@@ -821,6 +821,10 @@ div .line{
     }
     .container #flip:checked ~ form .login-form{
       display: none;
+    }
+
+    .btns{
+      margin-left: 0px;
     }
   }
   
